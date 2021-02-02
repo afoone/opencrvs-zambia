@@ -13,3 +13,5 @@ services:
   resources:
     image: opencrvs/ocrvs-zambia:${VERSION:-latest}
     build: .
+    volumes:
+      - ../opencrvs-core/.build/public-key.pem:/.secrets/public-key.pem'
